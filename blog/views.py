@@ -4,6 +4,7 @@ from django.utils import timezone
 from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
+from django.views.generic import TemplateView
 
 
 def post_list(request):
@@ -40,3 +41,7 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+
+class HomePageView(TemplateView):
+    template_name = 'home_page.html'
