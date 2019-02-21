@@ -1,8 +1,10 @@
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+.header {
+    background-color: #DCDCDC;        
+    display: flex;
+    margin-bottom: 1em;  
+    width: 100%;
 }
+
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
@@ -37,16 +39,34 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
-.post {
-    margin-bottom: 70px;
+.post_detail {
+    margin: 20px;
+    display: inline-block;
+    align-content: flex;
+    
 }
+
+.post-container{
+    display:table;
+    width: auto;
+    margin: 0px;
+    padding:  10px;
+}
+
+
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
 
 .image_post {
-	max-height: 360px;
+	max-height: 240px;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.image_post_detail {
+	max-height: 800px;
 	border: 1px solid #ddd;
     border-radius: 4px;
 }
