@@ -1,10 +1,11 @@
 from django.db import models
 from django.utils import timezone
 from django.core.validators import MaxValueValidator, MinValueValidator
+from users.models import CustomUser
 
 
 class Post(models.Model):
-	#author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+	author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, default=0)
 	title = models.CharField(max_length=200)
 	text = models.TextField()
 	price = models.IntegerField(null=True, blank=False, validators=[MinValueValidator(1),MaxValueValidator(999999)])

@@ -1,22 +1,21 @@
 <!-- templates/signup.html -->
+{% extends 'blog/base.html' %}
+{% load staticfiles%}
 {% load static %}
+{% block content %}
+
 {% load crispy_forms_tags %}
-<html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+
     <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet"> 
     
-  </head>
-
-  <body>
-    <h2>Regístrate</h2>
+<div class="login_all login_text">
+    <h4>Regístrate</h2>
     <form method="post" class="form-group">
        {% csrf_token %}
        {{ form|crispy }}
         <br>
         <button type="submit" class="btn btn-primary buttons" >Regístrate</button>
     </form>  
-  </body>
-  
-</html>
+</div>
+{% endblock %}

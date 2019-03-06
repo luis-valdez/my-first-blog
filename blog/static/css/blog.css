@@ -3,7 +3,32 @@
     display: flex;
     margin-bottom: 1em;  
     width: 100%;
+
 }
+.blue-text{
+    color: rgb(0,123,255);
+}
+.my-button{
+    margin-right: 20px;
+}
+.logo{
+    height: 50px;
+    margin-bottom:10px;
+
+}
+.loggedin{
+    display: flex;
+}
+.inline-display{
+    display: inline-flex !important;
+}
+
+.right-header {
+    position: absolute;
+    right: 10px;
+    top:6px;
+    
+  }
 
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -16,7 +41,7 @@
     margin-left: 40px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: 'Lobster', cursive;
 }
 
@@ -40,9 +65,14 @@ h1, h2, h3, h4 {
 }
 
 .post_detail {
-    margin: 20px;
-    display: inline-block;
-    align-content: flex;
+    position: relative;
+    
+    
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
     
 }
 
@@ -66,7 +96,28 @@ h1, h2, h3, h4 {
 }
 
 .image_post_detail {
-	max-height: 800px;
+	max-height: 600px;
 	border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Mukta Mahee' !important;
+      
+}
+
+.login_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

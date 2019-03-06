@@ -5,6 +5,6 @@
     <h1>Nueva publicación</h1>
     <form method="POST" enctype="multipart/form-data" class="post-form">{% csrf_token %}
         {{ form|crispy }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-primary">POST</button>
     </form>
 {% endblock %}
